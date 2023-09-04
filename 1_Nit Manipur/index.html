@@ -9,239 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    <link rel="stylesheet" href="style.css" />
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Poppins", sans-serif;
-        font-size: 14px;
-      }
-      :root {
-        /* --maroon: #c70b0e; */
-        --maroon: #990406;
-        --white: #fff;
-        --black: #212529;
-        --orange: #fd6d0d;
-       
-      }
-
-      /* footer */
-      footer {
-        background-color: var(--black);
-        color: var(--white);
-      }
-      .footer {
-        background-color: var(--maroon);
-        padding: 20px;
-        color: var(--white);
-        font-size: 0.9rem;
-        text-align: center;
-      }
-
-           .phone {
-        width: 40px;
-        height: 40px;
-        background-color: var(--maroon);
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .social_media {
-        display: flex;
-        justify-content: space-between;
-        width: 65%;
-      }
-      .section_1,
-      .section_2_links,
-      .get_in_touch {
-        margin: 0 15px;
-      }
-      .section_1 {
-        border-bottom: 2px solid var(--maroon);
-        padding: 10px 0;
-      }
-      .section_2_links {
-        padding: 10px 0;
-      }
-      .quick_link,
-      .links,
-      .supports {
-        width: 100%;
-        height: 45px;
-        background-color: var(--orange);
-        padding: 10px 5px;
-        margin: 20px 0;
-      }
-      .get_in_touch {
-        line-height: 1.8;
-        padding: 10px 0;
-      }
-      .get_in_touch h3 {
-        color: var(--orange);
-      }
-
-      /* navbar */
-      .navbar,
-      .logo {
-        background-color: var(--black);
-        padding: 10px 0;
-      }
-      nav a,
-      footer a {
-        text-decoration: none;
-        color: var(--white);
-      }
-
-      button {
-        border: 2px solid var(--maroon);
-        border-radius: 5px;
-        padding: 8px;
-        font-size: 15px;
-        font-weight: 550;
-        color: #454040;
-        background-color: #ffff;
-        margin: 12px 0;
-      }
-      .menu {
-        background-color: var(--maroon);
-        width: 100%;
-        padding: 15px 15px;
-      }
-      i {
-        padding: 0 15px;
-      }
-      .details {
-        line-height: 1.8;
-      }
-
-      
-      /* about nit manipur section */
-
-      h2 {
-        font-size: 30px;
-        position: relative;
-        padding: 20px 0;
-      }
- 
-
-      .b {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--orange);
-        margin: 15px 0;
-        width: 100%;
-        height: 3rem;
-        border-radius: 5px;
-      }
-      .about_nit_manipur {
-        margin: 0 20px;
-      }
-      .about_nit_manipur > .campus_image {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 182px;
-        border-radius: px;
-      }
-      .about_nit_manipur > p {
-        line-height: 1.5;
-        color: var(--black);
-        margin: 10px 0;
-        text-align: justify;
-      }
-
-
-
-
-      /* photo gallery  section */
-
-
-      .gallery h2 {
-        text-align: center;
-        color: var(--black);
-        }
-      .gallery{
-          margin: 30px;
-      }
-      .photo-grid img{
-        border-radius: 5px;
-        min-height: 182px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-      }
-      button.view-all{
-        background-color: var(--maroon);
-        color: var(--white);
-      }
-      .button{
-        display: flex;
-        justify-content: center;
-        margin: 40px 0;
-      }
-
-
-
-      /* vision and mission */
-
-
-      section {
-        margin: 0 1rem;
-      }
-      section h2 {
-        text-align: center;
-        color: var(--black);
-        margin-top: 2.5rem;
-      }
-      section h3 span{
-        font-size: 22px;
-        color: var(--maroon);
-        font-weight: 500;
-        line-height: 1.2;
-                border-bottom: 1px solid #990406;
-
-      }
-      section h3{
-        margin: 1rem 0;
-      }
-    
-
-      section .contain p{
-        line-height: 1.7;
-        margin: 0;
-        text-align: justify;
-      }
-      .viewall{
-        margin: 1rem 0;
-         text-decoration: none;
-        font-weight: 600;
-        color: var(--black);
-        line-height: 1.8;
-
-      }
-      ul li{
-        display: flex;
-      }
-      .content{
-        width: 452px;
-
-        margin:0.1px;  
-        background-color: #eee;
-      }
-    
-      /* styles end */
-
-    </style>
   </head>
   <body>
     <main class="content">
@@ -250,7 +19,7 @@
 
 
       <nav class="navbar">
-        <div class="logo"><img src="nit_logo.png" alt="" height="50px" /></div>
+        <div class="logo"><img src="assets/nit_logo.png" alt="" height="50px" /></div>
         <div class="details">
           <div class="a">
             <i class="fa-solid fa-phone" style="color: #fd6d0d"></i
@@ -278,7 +47,7 @@
       <section class="about_nit_manipur">
         <h2>About NIT Manipur</h2>
         <div class="campus_image">
-          <img src="campus_photo.jpg" alt="" height="150px" width="100%" />
+          <img src="assets/campus_photo.jpg" alt="" height="150px" width="100%" />
         </div>
         <p>
           NIT Manipur started its first session on 2nd August 2010 with only three branches of Engineering namely - Electrical Engineering, Electronics & Communication Engineering and Computer Science & Engineering at Government Polytechnic, Takyelpat Campus. It is presently functioning in its Permanent Campus at Langol, Imphal, with two more Engineering Branches namely - Mechanical Engineering and Civil Engineering. The institute has acquired 341.5 acres of land in lush green areas of Langol, Imphal.
@@ -324,19 +93,19 @@
         <h2 class="main-heading">Photo Gallery</h2>
         <div class="photo-grid">
           <div class="item-1">
-            <img src="h_photo_1.jpg" alt="" />
+            <img src="assets/h_photo_1.jpg" alt="" />
           </div>
           <div class="item-2">
-            <img src="h_photo_2.jpg" alt="" />
+            <img src="assets/h_photo_2.jpg" alt="" />
           </div>
           <div class="item-3">
-            <img src="h_photo_3.jpg" alt="" />
+            <img src="assets/h_photo_3.jpg" alt="" />
           </div>
           <div class="item-4">
-            <img src="h_photo_4.jpeg" alt="" />
+            <img src="assets/h_photo_4.jpeg" alt="" />
           </div>
           <div class="item-5">
-            <img src="h_photo_5.jpg" alt="" />
+            <img src="assets/h_photo_5.jpg" alt="" />
           </div>
         </div>
         <div class="button">
