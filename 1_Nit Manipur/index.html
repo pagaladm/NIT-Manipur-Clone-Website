@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIT Manipur</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+      }
+      :root {
+        /* --maroon: #c70b0e; */
+        --maroon: #990406;
+        --white: #fff;
+        --black: #212529;
+        --orange: #fd6d0d;
+       
+      }
+
+      /* footer */
+      footer {
+        background-color: var(--black);
+        color: var(--white);
+      }
+      .footer {
+        background-color: var(--maroon);
+        padding: 20px;
+        color: var(--white);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+           .phone {
+        width: 40px;
+        height: 40px;
+        background-color: var(--maroon);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .social_media {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+      }
+      .section_1,
+      .section_2_links,
+      .get_in_touch {
+        margin: 0 15px;
+      }
+      .section_1 {
+        border-bottom: 2px solid var(--maroon);
+        padding: 10px 0;
+      }
+      .section_2_links {
+        padding: 10px 0;
+      }
+      .quick_link,
+      .links,
+      .supports {
+        width: 100%;
+        height: 45px;
+        background-color: var(--orange);
+        padding: 10px 5px;
+        margin: 20px 0;
+      }
+      .get_in_touch {
+        line-height: 1.8;
+        padding: 10px 0;
+      }
+      .get_in_touch h3 {
+        color: var(--orange);
+      }
+
+      /* navbar */
+      .navbar,
+      .logo {
+        background-color: var(--black);
+        padding: 10px 0;
+      }
+      nav a,
+      footer a {
+        text-decoration: none;
+        color: var(--white);
+      }
+
+      button {
+        border: 2px solid var(--maroon);
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 550;
+        color: #454040;
+        background-color: #ffff;
+        margin: 12px 0;
+      }
+      .menu {
+        background-color: var(--maroon);
+        width: 100%;
+        padding: 15px 15px;
+      }
+      i {
+        padding: 0 15px;
+      }
+      .details {
+        line-height: 1.8;
+      }
+
+      
+      /* about nit manipur section */
+
+      h2 {
+        font-size: 30px;
+        position: relative;
+        padding: 20px 0;
+      }
+ 
+
+      .b {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--orange);
+        margin: 15px 0;
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+      }
+      .about_nit_manipur {
+        margin: 0 20px;
+      }
+      .about_nit_manipur > .campus_image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 182px;
+        border-radius: px;
+      }
+      .about_nit_manipur > p {
+        line-height: 1.5;
+        color: var(--black);
+        margin: 10px 0;
+        text-align: justify;
+      }
+
+
+
+
+      /* photo gallery  section */
+
+
+      .gallery h2 {
+        text-align: center;
+        color: var(--black);
+        }
+      .gallery{
+          margin: 30px;
+      }
+      .photo-grid img{
+        border-radius: 5px;
+        min-height: 182px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      button.view-all{
+        background-color: var(--maroon);
+        color: var(--white);
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+      }
+
+
+
+      /* vision and mission */
+
+
+      section {
+        margin: 0 1rem;
+      }
+      section h2 {
+        text-align: center;
+        color: var(--black);
+        margin-top: 2.5rem;
+      }
+      section h3 span{
+        font-size: 22px;
+        color: var(--maroon);
+        font-weight: 500;
+        line-height: 1.2;
+                border-bottom: 1px solid #990406;
+
+      }
+      section h3{
+        margin: 1rem 0;
+      }
+    
+
+      section .contain p{
+        line-height: 1.7;
+        margin: 0;
+        text-align: justify;
+      }
+      .viewall{
+        margin: 1rem 0;
+         text-decoration: none;
+        font-weight: 600;
+        color: var(--black);
+        line-height: 1.8;
+
+      }
+      ul li{
+        display: flex;
+      }
+      .content{
+        width: 452px;
+
+        margin:0.1px;  
+        background-color: #eee;
+      }
+    
+      /* styles end */
+
+    </style>
+  </head>
+  <body>
+    <main class="content">
+
+      <!-- navbar -->
+
+
+      <nav class="navbar">
+        <div class="logo"><img src="nit_logo.png" alt="" height="50px" /></div>
+        <div class="details">
+          <div class="a">
+            <i class="fa-solid fa-phone" style="color: #fd6d0d"></i
+            ><a href="#"> 0385-2445812</a>
+          </div>
+          <div class="a">
+            <i class="fa-solid fa-fax" style="color: #fd6d0d"></i
+            ><a href="#">0385-2413031</a>
+          </div>
+          <div class="a">
+            <i class="fa-solid fa-envelope" style="color: #fd6d0d"></i
+            ><a href="#">admin@nitmanipur.ac.in</a>
+          </div>
+        </div>
+      </nav>
+      <div class="menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff; font-size: 25px"></i>
+      </div>
+
+
+
+      <!-- about nit manipur -->
+
+      <section class="poster"></section>
+      <section class="about_nit_manipur">
+        <h2>About NIT Manipur</h2>
+        <div class="campus_image">
+          <img src="campus_photo.jpg" alt="" height="150px" width="100%" />
+        </div>
+        <p>
+          NIT Manipur started its first session on 2nd August 2010 with only three branches of Engineering namely - Electrical Engineering, Electronics & Communication Engineering and Computer Science & Engineering at Government Polytechnic, Takyelpat Campus. It is presently functioning in its Permanent Campus at Langol, Imphal, with two more Engineering Branches namely - Mechanical Engineering and Civil Engineering. The institute has acquired 341.5 acres of land in lush green areas of Langol, Imphal.
+        </p>
+        <button class="read_more">Read More</button>
+      </section>
+
+      <!-- vission and mission -->
+      <section class="vision-mission">
+        <div class="contain">
+          <h2 class="main-heading">Vision &amp; Mission</h2>
+              <h3><span>Vision</span></h3>
+                    <p>The Institute aims to provide the best infrastructure and amenities to the students. The institute envisions being one of the best technical institutes in South-East Asia.</p>
+                    <a href="/DisplayPage.aspx?page=o&amp;ItemID=e" class="viewall">Readmore <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+              <h3><span>Mission</span></h3>
+                    <p>The Institute being accorded the status of "An Institute of National Importance" aspires to be a knowledge hub for the region. The Institute through its academic and research activities would act as incubation center for aspiring "technopreneurs".</p>
+                    <a href="/DisplayPage.aspx?page=o&amp;ItemID=e" class="viewall">Readmore <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+              <h3><span>Objective</span></h3>
+              <p>The objective of the Institute is to provide the best infrastructure and amenities to the students. The institute envisions being one of the best technical institutes in India.</p>
+              <div class="para">
+                  <i class="fa fa-chevron-circle-right" style="color: #990406;" ></i><p>To nurture and develop talented young minds, encouraging creativity with academic excellence.</p></div>
+              <div class="para">
+                      <i class="fa fa-chevron-circle-right" style="color: #990406;"></i><p>To provide a platform to young entrepreneurs and technocrats to experiment their dreams and aspirations.</p>
+                  </ul>
+                    <a href="/DisplayPage.aspx?page=o&amp;ItemID=e" class="viewall">Readmore <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- photo galary -->
+      <section class="gallery">
+        <h2 class="main-heading">Photo Gallery</h2>
+        <div class="photo-grid">
+          <div class="item-1">
+            <img src="h_photo_1.jpg" alt="" />
+          </div>
+          <div class="item-2">
+            <img src="h_photo_2.jpg" alt="" />
+          </div>
+          <div class="item-3">
+            <img src="h_photo_3.jpg" alt="" />
+          </div>
+          <div class="item-4">
+            <img src="h_photo_4.jpeg" alt="" />
+          </div>
+          <div class="item-5">
+            <img src="h_photo_5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="button">
+        <button class="view-all">View All</button></div>
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      <!-- footer -->
+      
+
+
+      <footer>
+        <div class="section_1">
+          <div class="logo">
+            <img src="nit_logo.png" alt="" height="50px" />
+          </div>
+          <div class="social_media">
+            <div class="phone">
+              <i class="fa-brands fa-linkedin-in" style="color: #fdfdfd"></i>
+            </div>
+            <div class="phone">
+              <i class="fa-brands fa-skype" style="color: #ffffff"></i>
+            </div>
+            <div class="phone">
+              <i class="fa-brands fa-instagram" style="color: #fcfcfd"></i>
+            </div>
+            <div class="phone">
+              <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+            </div>
+            <div class="phone">
+              <i class="fa-brands fa-twitter" style="color: #fff"></i>
+            </div>
+          </div>
+        </div>
+        <div class="section_2_links">
+          <div class="b">
+            <div class="quick_link">Quick Links</div>
+            <div class="plus">
+              <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+            </div>
+          </div>
+
+          <div class="b">
+            <div class="links">Links</div>
+            <div class="plus">
+              <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+            </div>
+          </div>
+
+          <div class="b">
+            <div class="supports">Supports</div>
+            <div class="plus">
+              <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+        <div class="get_in_touch">
+          <h3>Get In Touch</h3>
+          <div class="address">
+            <i class="fa-solid fa-paper-plane" style="color: #fd6d0d"></i
+            >Langol, Imphal-795004, Manipur (INDIA)
+          </div>
+          <div class="">
+            <i class="fa-solid fa-phone" style="color: #fd6d0d"></i>
+            <a href="#" class="">0385-2445812</a>
+          </div>
+          <div class="telephone">
+            <i class="fa-solid fa-fax" style="color: #fd6d0d"></i>
+            <a href="#">0385-2413031</a>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope" style="color: #fd6d0d"></i>
+            <a href="#">admin@nitmanipur.ac.in</a>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Copyright 2017 @ Nit Manipur | Designed by Mastersoft</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
